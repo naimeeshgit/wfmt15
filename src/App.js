@@ -24,7 +24,6 @@ import { bgcolor, padding } from '@mui/system';
 import background from "./img/background.jpeg";
 import bg from "./img/background.jpg";
 
-
 function Dashboard() {
 	const [loadData, setData] = useState(null);
 	const [columns, setColumns] = useState([]);
@@ -355,7 +354,6 @@ function Dashboard() {
 	return (
 		// <div style={{backgroundColor: "#b3d6e8", padding:"50px"}}>
 		<div style={backStyle2}>
-			
 			{/* <div style = {{backgroundColor:"#77c6ed", padding:"20px", boxShadow: "3px"}}> */}
 			<div style={backStyle}>
 				<Grid container spacing={5}>
@@ -372,7 +370,6 @@ function Dashboard() {
 							variant="contained"
 							onClick={handleAPIcall}>Reload data</Button>
 					</Grid> */}
-					
 					<Grid item xs={12}>
 						{loadData ? (analytics()) : (loadingScreen())}
 					</Grid>
